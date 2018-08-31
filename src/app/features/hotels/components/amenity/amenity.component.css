@@ -1,0 +1,12 @@
+@font-face {
+  font-family: amenities-font;
+  src: url(/assets/fonts/amenities/fonts/amenities-font.ttf);
+}
+
+:host {
+  box-sizing: border-box;
+  margin-right: 7.5px;
+  font-display: amenities-font;
+  font-size: 15px;
+  color: #454848;
+}

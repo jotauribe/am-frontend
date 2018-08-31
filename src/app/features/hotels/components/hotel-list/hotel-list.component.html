@@ -1,0 +1,7 @@
+<section>
+  <p>Soy una lista de hoteles</p>
+  <article *ngFor="let hotel of hotels">
+    <app-hotel class="hotel" [name]="hotel.name" [numberOfStars]="hotel.stars" [image]="hotel.image" [amenities]="hotel.amenities"
+      [price]="hotel.price"></app-hotel>
+  </article>
+</section>

@@ -1,0 +1,26 @@
+<div fxLayout="row" fxLayoutAlign="start">
+  <div>
+    <img src="{{_image}}" class="hotel-image">
+  </div>
+  <div class="hotel-description">
+    <h4 class="hotel-name">{{name}}</h4>
+    <div>
+      <span *ngFor="let item of Arr(+numberOfStars).fill(0);" class="yellowStar">
+      </span>
+    </div>
+    <hotel-amenity *ngFor="let amenity of amenities;" type="{{amenity}}">
+      {{amenity}}
+    </hotel-amenity>
+  </div>
+  <div fxFlexAlign="center" fxLayout="column" fxLayoutAlign="center center" class="hotel-price-detail">
+    <div class="price-label">
+      <span class="price-label-text">Precio por noche por habitacion</span>
+    </div>
+    <div class="">
+      <span class="currency">ARS </span>
+      <span class="price">{{price}}</span>
+    </div>
+    <button type="button" class="btn btn-primary seeHotelBtn">Ver hotel</button>
+
+  </div>
+</div>
