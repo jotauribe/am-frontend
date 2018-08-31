@@ -42,12 +42,12 @@ hotel .hotel .hotel-ctn .hotel-description .hotel-name {
 }
 
 .currency {
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .price {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
 }
 
