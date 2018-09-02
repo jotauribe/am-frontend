@@ -8,9 +8,10 @@ import { EffectsModule } from '@ngrx/effects';
 import { HotelsModule } from './features/hotels/hotels.module';
 
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavbarComponent],
   imports: [
     BrowserModule,
     HotelsModule,
