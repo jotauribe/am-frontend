@@ -1,7 +1,7 @@
 export interface IHotel {
   id: string;
   name: string;
-  stars: string;
+  stars: number;
   price: number;
   image: string;
   amenities: string[];
@@ -10,7 +10,7 @@ export interface IHotel {
 export class Hotel implements IHotel {
   id: string;
   name: string;
-  stars: string;
+  stars: number;
   price: number;
   image: string;
   amenities: string[];

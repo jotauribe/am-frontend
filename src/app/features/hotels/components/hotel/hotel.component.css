@@ -28,7 +28,13 @@ hotel .hotel .hotel-ctn .hotel-description .hotel-name {
   max-height: 100%;
   padding: 10px;
   max-height: 233px;
-  width: 100%;
+  width: 350px;
+}
+.yellowStar {
+  padding-left: 20px;
+  background-color: #fdba12;
+  mask: url(/assets/icons/filters/star.svg) no-repeat center;
+  -webkit-mask: url(/assets/icons/filters/star.svg) no-repeat center;
 }
 
 .hotel-price-detail {
