@@ -10,20 +10,30 @@ import { EffectsModule } from '@ngrx/effects';
 
 import { reducers, effects } from './store';
 import { HotelsService } from './services/hotels';
+import { SearchWidgetComponent } from './components/search-widget/search-widget.component';
+import { NameFormComponent } from './components/name-form/name-form.component';
+import { StarsFormComponent } from './components/stars-form/stars-form.component';
+import { StarCheckboxComponent } from './components/star-checkbox/star-checkbox.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
+    FormsModule,
+    ReactiveFormsModule,
     CommonModule,
     FlexLayoutModule,
     StoreModule.forFeature('hotels', reducers),
-    //
     EffectsModule.forFeature(effects)
   ],
   declarations: [
     HotelListComponent,
     HotelComponent,
     AmenityComponent,
-    HotelsComponent
+    HotelsComponent,
+    SearchWidgetComponent,
+    NameFormComponent,
+    StarsFormComponent,
+    StarCheckboxComponent
   ],
   exports: [HotelsComponent],
   providers: [HotelsService]

@@ -24,20 +24,6 @@ const initialState: State = {
       ]
     },
     {
-      id: '161901',
-      name: 'Hotel Santa Cruz',
-      stars: 3,
-      price: 1267.57,
-      image: '6623490_6_b.jpg',
-      amenities: [
-        'nightclub',
-        'business-center',
-        'bathtub',
-        'newspaper',
-        'restaurant'
-      ]
-    },
-    {
       id: '161914',
       name: 'NM Lima Hotel',
       stars: 4,
@@ -60,7 +46,6 @@ export function reducer(
   state = initialState,
   action: fromHotels.Actions
 ): State {
-  console.log(action.payload);
   switch (action.type) {
     case fromHotels.FETCH_HOTELS:
       return {

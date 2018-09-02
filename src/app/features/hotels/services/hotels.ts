@@ -9,7 +9,10 @@ export class HotelsService {
   constructor(private http: HttpClient) {}
 
   fetchHotels({ stars, name }): Observable<Hotel[]> {
-    const queryUrl = `http://localhost:3000/api/hotel?name${name}&stars${stars}`;
+    console.log('stars from service ', stars, 'name from service ', name);
+    const nameFilter = name ? `name=${name}` : '';
+    const starsFilter = stars ? `&stars=${stars.join(',')}` : '';
+    const queryUrl = `http://localhost:3000/api/hotel?${nameFilter}${starsFilter}`;
 
     return this.http.get<Hotel[]>(queryUrl);
   }

@@ -1,0 +1,22 @@
+<div class="starsHeader">
+  <span></span>
+  <strong>Estrellas</strong>
+</div>
+<form class="starForm"
+      [formGroup]="form">
+  <app-star-checkbox numberOfStars=5
+                     (change)="onChange($event)"
+                     formControlName="fiveStars"></app-star-checkbox>
+  <app-star-checkbox numberOfStars=4
+                     (change)="onChange($event)"
+                     formControlName="fourStars"></app-star-checkbox>
+  <app-star-checkbox numberOfStars=3
+                     (change)="onChange($event)"
+                     formControlName="threeStars"></app-star-checkbox>
+  <app-star-checkbox numberOfStars=2
+                     (change)="onChange($event)"
+                     formControlName="twoStars"></app-star-checkbox>
+  <app-star-checkbox numberOfStars=1
+                     (change)="onChange($event)"
+                     formControlName="oneStar"></app-star-checkbox>
+</form>

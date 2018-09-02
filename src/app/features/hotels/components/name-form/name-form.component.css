@@ -1,0 +1,49 @@
+.card {
+  border-radius: 0;
+  font-size: 0.9em;
+  text-align: left;
+  background-color: transparent;
+}
+
+.card-header {
+  background-color: white;
+}
+
+.list-group-item {
+  border: 0;
+}
+
+.starsHeader span {
+  padding-left: 25px;
+  background-color: #007bff;
+  mask: url(/assets/icons/filters/star.svg) no-repeat center;
+}
+
+.hotelNameHeader span {
+  padding-left: 25px;
+  background-color: #007bff;
+  mask: url(/assets/icons/filters/search.svg) no-repeat center;
+}
+
+.starsHeader,
+.hotelNameHeader {
+  font-size: 90%;
+  color: #007bff;
+  margin-bottom: 12.5px;
+}
+
+.form-control,
+btn {
+  font-size: 90%;
+}
+
+.btn {
+  border-radius: 0.05;
+  margin-left: 10px;
+}
+
+.yellowStar {
+  padding-left: 20px;
+  background-color: #d4b91b;
+  mask: url(/assets/icons/filters/star.svg) no-repeat center;
+}

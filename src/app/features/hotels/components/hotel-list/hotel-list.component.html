@@ -1,5 +1,4 @@
 <section>
-  <p>Soy una lista de hoteles</p>
   <article *ngFor="let hotel of hotels | async">
     <app-hotel class="hotel"
                [name]="hotel.name"

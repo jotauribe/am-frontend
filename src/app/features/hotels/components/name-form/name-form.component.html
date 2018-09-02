@@ -1,0 +1,18 @@
+<div class="hotelNameHeader">
+  <span></span>
+  <strong>Nombre del hotel</strong>
+</div>
+
+<form class="hotelNameForm form-inline"
+      [formGroup]='form'
+      (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <input formControlName="hotelName"
+           type="text"
+           class="form-control form-control-sm"
+           id="inputEmail4"
+           placeholder="Ingrese el nombre del hotel">
+    <button type="submit"
+            class="btn btn-primary btn-sm">Aceptar</button>
+  </div>
+</form>

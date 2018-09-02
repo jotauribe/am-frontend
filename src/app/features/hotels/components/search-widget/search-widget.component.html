@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-header">
+    <strong>Filtros</strong>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+
+      <app-name-form (hotelNameSelected)="onSelectedHotelName($event)"></app-name-form>
+
+    </li>
+    <li class="list-group-item">
+      <app-stars-form (starSelected)="onSelectedStars($event)"></app-stars-form>
+    </li>
+  </ul>
+</div>
