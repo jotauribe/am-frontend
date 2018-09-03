@@ -9,7 +9,7 @@ import * as fromStore from '../../store';
   styleUrls: ['./search-widget.component.css']
 })
 export class SearchWidgetComponent implements OnInit {
-  selectedStars: [];
+  selectedStars: string[];
   selectedHotelName: string;
   isCollapsed = false;
   windowSize: number;
