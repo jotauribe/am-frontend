@@ -2,3 +2,12 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+@media (min-width: 600px) {
+  aside {
+    min-width: 275px;
+  }
+
+  main {
+    min-width: 765px;
+  }
+}

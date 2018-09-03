@@ -6,7 +6,8 @@
 <form class="hotelNameForm form-inline"
       [formGroup]='form'
       (ngSubmit)="onSubmit()">
-  <div class="form-group">
+  <div fxLayout="row"
+       class="form-group">
     <input formControlName="hotelName"
            type="text"
            class="form-control form-control-sm"

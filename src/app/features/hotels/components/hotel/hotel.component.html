@@ -1,26 +1,43 @@
-<div fxLayout="row" fxLayoutAlign="start">
+<div fxLayout="row"
+     fxLayout.xs="column"
+     fxLayoutAlign="start">
   <div>
-    <img src="{{_image}}" class="hotel-image">
+    <img src="{{_image}}"
+         class="hotel-image">
   </div>
   <div class="hotel-description">
     <h4 class="hotel-name">{{name}}</h4>
-    <div>
-      <span *ngFor="let item of Arr(+numberOfStars).fill(0);" class="yellowStar">
+    <div class="hotel-rank">
+      <span *ngFor="let item of Arr(+numberOfStars).fill(0);"
+            class="yellowStar">
       </span>
     </div>
-    <hotel-amenity *ngFor="let amenity of amenities;" type="{{amenity}}">
-      {{amenity}}
-    </hotel-amenity>
+    <div class="hotel-amenities">
+      <hotel-amenity *ngFor="let amenity of amenities;"
+                     type="{{amenity}}">
+        {{amenity}}
+      </hotel-amenity>
+    </div>
+
   </div>
-  <div fxFlex="25%" fxFlexAlign="center" fxLayout="column" fxLayoutAlign="center center" class="hotel-price-detail">
+  <div class="hotel-price-detail"
+       fxFlex="25%"
+       fxFlex.xs="100%"
+       fxFlexAlign="center"
+       fxLayout="column"
+       fxLayoutAlign="center center">
     <div class="price-label">
       <span class="price-label-text">Precio por noche por habitacion</span>
     </div>
-    <div fxLayout="row" fxLayoutAlign="center center">
+    <div class="hotel-price"
+         fxLayout="row"
+         fxLayoutAlign="center center"
+         fxFlex.xs="100%">
       <span class="currency">ARS </span>
       <span class="price">{{price}}</span>
     </div>
-    <button type="button" class="btn btn-primary seeHotelBtn">Ver hotel</button>
+    <button type="button"
+            class="btn btn-primary seeHotelBtn">Ver hotel</button>
 
   </div>
 </div>

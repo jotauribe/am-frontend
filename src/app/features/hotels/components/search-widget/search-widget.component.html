@@ -1,15 +1,26 @@
 <div class="card">
   <div class="card-header">
-    <strong>Filtros</strong>
+    <div class="card-name">
+      <strong>Filtros</strong>
+      <span class="caret"
+            (click)="onCollapse()"
+            [attr.aria-expanded]="!isCollapsed"
+            aria-controls="collapseExample"
+            *ngIf="isOnSmallScreen()">
+      </span>
+    </div>
+
   </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+  <div id="collapseExample"
+       [ngbCollapse]="isCollapsed">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">
+        <app-name-form></app-name-form>
+      </li>
+      <li class="list-group-item">
+        <app-stars-form (starSelected)="onSelectedStars($event)"></app-stars-form>
+      </li>
+    </ul>
+  </div>
 
-      <app-name-form (hotelNameSelected)="onSelectedHotelName($event)"></app-name-form>
-
-    </li>
-    <li class="list-group-item">
-      <app-stars-form (starSelected)="onSelectedStars($event)"></app-stars-form>
-    </li>
-  </ul>
 </div>

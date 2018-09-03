@@ -16,8 +16,9 @@ hotel .hotel .hotel-ctn .hotel-description .hotel-name {
   padding-right: 32px;
 }
 
-.col-md-8.hotel-description {
+.hotel-description {
   position: relative;
+  padding: 10px;
   text-align: left;
   padding: 16px;
   overflow: hidden;
@@ -25,11 +26,9 @@ hotel .hotel .hotel-ctn .hotel-description .hotel-name {
 
 .hotel-image {
   box-sizing: border-box;
-  max-height: 100%;
   padding: 10px;
-  max-height: 233px;
-  width: 350px;
 }
+
 .yellowStar {
   padding-left: 20px;
   background-color: #fdba12;
@@ -39,12 +38,6 @@ hotel .hotel .hotel-ctn .hotel-description .hotel-name {
 
 .hotel-price-detail {
   box-sizing: border-box;
-  padding: 40px;
-  height: 213px;
-  border-left-style: dashed;
-  border-left-width: 1.19px;
-  border-left-color: grey;
-  margin-left: auto;
 }
 
 .currency {
@@ -59,7 +52,6 @@ hotel .hotel .hotel-ctn .hotel-description .hotel-name {
 
 .price-label {
   font-size: 12px;
-  max-width: 120px;
   text-align: center;
 }
 
@@ -68,4 +60,62 @@ hotel .hotel .hotel-ctn .hotel-description .hotel-name {
   padding-bottom: 5px;
   padding-right: 25px;
   padding-left: 25px;
+}
+
+@media (min-width: 600px) {
+  .hotel-price-detail {
+    height: 213px;
+    border-left-style: dashed;
+    border-left-width: 1.19px;
+    border-left-color: grey;
+    margin-left: auto;
+    padding: 40px;
+  }
+
+  .hotel-image {
+    max-height: 233px;
+    width: 350px;
+  }
+
+  .hotel-description {
+    padding: 10px;
+  }
+
+  .hotel-rank {
+    padding: 5px;
+  }
+
+  .hotel-amenities {
+    padding: 5px;
+  }
+
+  .price-label {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 599px) {
+  .hotel-price-detail {
+    width: 95%;
+    padding: 15px;
+    padding-bottom: 30px;
+    border-top-style: dashed;
+    border-top-width: 1.19px;
+    border-top-color: grey;
+  }
+
+  .hotel-image {
+    max-height: 100%;
+    width: 100%;
+  }
+
+  .hotel-price {
+    padding: 10px;
+  }
+
+  .seeHotelBtn {
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+  }
 }

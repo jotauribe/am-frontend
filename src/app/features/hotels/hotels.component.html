@@ -1,8 +1,12 @@
-<div class="row">
-  <aside class="col-3">
+<div fxLayout='row'
+     fxLayout.xs='column'
+     fxLayoutGap="10px">
+  <aside fxFlex.xs="100%"
+         fxFlex="20%">
     <app-search-widget></app-search-widget>
   </aside>
-  <main class="col-9">
+  <main fxFlex="80%"
+        fxFlex.xs="100%">
     <app-hotel-list></app-hotel-list>
   </main>
 </div>

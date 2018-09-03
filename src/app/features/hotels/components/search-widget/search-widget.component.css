@@ -47,3 +47,40 @@ btn {
   background-color: #d4b91b;
   mask: url(/assets/icons/filters/star.svg) no-repeat center;
 }
+
+.caret {
+  padding: 10px;
+}
+
+@media (max-width: 599px) {
+  .card-name {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .caret:after {
+    display: inline-block;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f054';
+    transform: rotate(90deg);
+    transition: all linear 0.25s;
+  }
+  [aria-expanded='true'].caret:after {
+    display: inline-block;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: '\f054';
+    transform: rotate(270deg);
+    transition: all linear 0.25s;
+  }
+}

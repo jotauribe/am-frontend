@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { HotelListComponent } from './components/hotel-list/hotel-list.component';
 import { HotelComponent } from './components/hotel/hotel.component';
 import { AmenityComponent } from './components/amenity/amenity.component';
@@ -20,6 +22,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   imports: [
     FormsModule,
     ReactiveFormsModule,
+    NgbModule.forRoot(),
     CommonModule,
     FlexLayoutModule,
     StoreModule.forFeature('hotels', reducers),
