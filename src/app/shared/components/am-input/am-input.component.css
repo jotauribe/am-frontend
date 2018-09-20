@@ -1,0 +1,54 @@
+input,
+label {
+  transition: all, 0.2s;
+  width: 100%;
+  background-color: transparent;
+}
+
+input {
+  border: solid 1px #aaa;
+  border-radius: 2px;
+  height: 48px;
+  padding: 14px 8px 2px;
+}
+
+label {
+  position: relative;
+  transform-origin: left bottom;
+  padding: 0px 10px 0px;
+  margin: 0px;
+  height: 0px;
+  font-size: 16px;
+  color: #555;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:placeholder-shown {
+  font-size: 1em;
+}
+
+input:placeholder-shown + label {
+  font-size: 1em;
+  transform-origin: left bottom;
+  transform: translate(0, 0.5rem) scale(1.25);
+  width: 66.666666%;
+  cursor: text;
+}
+
+input:focus + label {
+  transform-origin: left bottom;
+  transform: translate(0, 0.25rem) scale(0.75);
+  color: #2a969c;
+}
+
+input:valid + label {
+  transform-origin: left bottom;
+  transform: translate(0, 0.25rem) scale(0.75);
+}
+
+::placeholder {
+  opacity: 0;
+}
